@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='images/logo.png') }}">
+
+</head>
+
+<body class="recommend-page">
+    <!-- ===========================
+NAVBAR
+=========================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+
+    <div class="container">
+
+        <a class="navbar-brand d-flex align-items-center" href="/dashboard">
+
+            <img src="{{ url_for('static', filename='images/logo.png') }}"
+                 class="nav-logo">
+
+            <span>AI Tourist Travel</span>
+
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/recommend">
+                        Recommendation
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">
+                        Contact
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="overlay">
+
+<div class="container">
+
+<div class="recommend-box">
+
+    <h2>
+        <i class="bi bi-info-circle-fill"></i>
+        About AI Tourist Travel
+    </h2>
+
+    <hr>
+    <div class="mt-4">
+
+      <h3 class="text-primary">
+        🌍 Project Overview
+      </h3>
+
+    <p class="mt-3" style="text-align:justify; line-height:1.8;">
+
+        The <strong>AI Tourist Travel Recommendation System</strong> is a
+        web-based application developed using <strong>Python, Flask,
+        HTML, CSS, Bootstrap, and Machine Learning concepts</strong>.
+
+        The system recommends the most suitable tourist destinations
+        based on the user's selected <strong>State, Tourist Category,
+        and Best Time to Visit</strong>.
+
+        It also displays tourist images, ratings, travel information,
+        and important details to help users plan their trips more
+        effectively.
+
+    </p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<hr class="my-4">
+
+<h3 class="text-primary text-center mb-4">
+    🎯 Project Objectives
+</h3>
+
+<div class="row">
+
+    <div class="col-md-4 mb-3">
+
+        <div class="card shadow border-0 h-100">
+
+            <div class="card-body text-center">
+
+                <i class="bi bi-geo-alt-fill text-primary" style="font-size:45px;"></i>
+
+                <h5 class="mt-3">Smart Recommendation</h5>
+
+                <p>
+                    Recommend tourist places based on user preferences.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4 mb-3">
+
+        <div class="card shadow border-0 h-100">
+
+            <div class="card-body text-center">
+
+                <i class="bi bi-stars text-warning" style="font-size:45px;"></i>
+
+                <h5 class="mt-3">Personalized Travel</h5>
+
+                <p>
+                    Help users discover destinations that match their interests.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4 mb-3">
+
+        <div class="card shadow border-0 h-100">
+
+            <div class="card-body text-center">
+
+                <i class="bi bi-globe-central-south-asia text-success" style="font-size:45px;"></i>
+
+                <h5 class="mt-3">Easy Planning</h5>
+
+                <p>
+                    Provide complete travel information in one place.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<hr class="my-5">
+
+<h3 class="text-primary text-center mb-4">
+     Technologies Used
+</h3>
+
+<div class="row text-center">
+
+    <div class="col-md-3 mb-4">
+
+        <div class="card border-0 shadow h-100">
+
+            <div class="card-body">
+
+                <i class="bi bi-filetype-py text-warning" style="font-size:50px;"></i>
+
+                <h5 class="mt-3">Python</h5>
+
+                <p>Backend Programming</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3 mb-4">
+
+        <div class="card border-0 shadow h-100">
+
+            <div class="card-body">
+
+                <i class="bi bi-bootstrap-fill text-primary" style="font-size:50px;"></i>
+
+                <h5 class="mt-3">Bootstrap</h5>
+
+                <p>Responsive UI Design</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3 mb-4">
+
+        <div class="card border-0 shadow h-100">
+
+            <div class="card-body">
+
+                <i class="bi bi-code-slash text-success" style="font-size:50px;"></i>
+
+                <h5 class="mt-3">Flask</h5>
+
+                <p>Web Framework</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3 mb-4">
+
+        <div class="card border-0 shadow h-100">
+
+            <div class="card-body">
+
+                <i class="bi bi-cpu-fill text-danger" style="font-size:50px;"></i>
+
+                <h5 class="mt-3">Machine Learning</h5>
+
+                <p>Tourist Recommendation</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='images/logo.png') }}">
+</head>
+
+<body>
+
+    <!-- ===========================
+            NAVBAR
+    ============================ -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="{{ url_for('static', filename='images/logo.png') }}"
+                    class="nav-logo">
+                <span>AI Tourist Travel</span>
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            href="/dashboard">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="/recommend">Recommendation</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="/about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="/contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="/">Logout</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ===========================
+            WELCOME
+    ============================ -->
+
+    <section class="dashboard-section">
+
+        <div class="container">
+
+            <div class="welcome-card">
+
+                <h2>Welcome to AI Tourist Travel Recommendation System</h2>
+
+                <p>
+                    Discover the best tourist destinations across India using
+                    Artificial Intelligence. Get personalized travel recommendations
+                    based on your selected state, category and preferred season.
+                </p>
+
+                <a href="/recommend"
+                    class="btn btn-success btn-lg">
+
+                    <i class="bi bi-geo-alt-fill"></i>
+
+                    Get Recommendation
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+            STATISTICS
+    ============================ -->
+
+    <section class="stats-section">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="stats-card">
+
+                        <i class="bi bi-geo-alt-fill stats-icon"></i>
+
+                        <h2>325+</h2>
+
+                        <p>Tourist Places</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="stats-card">
+
+                        <i class="bi bi-map-fill stats-icon"></i>
+
+                        <h2>33</h2>
+
+                        <p>States Covered</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="stats-card">
+
+                        <i class="bi bi-stars stats-icon"></i>
+
+                        <h2>78+</h2>
+
+                        <p>Categories</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+WHY CHOOSE OUR SYSTEM
+=========================== -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <h2 class="text-center text-white fw-bold mb-5">
+            Why Choose Our System?
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- AI Recommendation -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow border-0 text-center p-4">
+
+                    <i class="bi bi-robot display-3 text-primary mb-3"></i>
+
+                    <h4>AI Recommendation</h4>
+
+                    <p>
+                        Get personalized travel suggestions based on your preferences.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Tourist Places -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow border-0 text-center p-4">
+
+                    <i class="bi bi-geo-alt-fill display-3 text-success mb-3"></i>
+
+                    <h4>325+ Tourist Places</h4>
+
+                    <p>
+                        Explore famous tourist destinations across India.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Fast Search -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow border-0 text-center p-4">
+
+                    <i class="bi bi-lightning-fill display-3 text-warning mb-3"></i>
+
+                    <h4>Fast Search</h4>
+
+                    <p>
+                        Find the best tourist places within seconds.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Real Images -->
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card h-100 shadow border-0 text-center p-4">
+
+                    <i class="bi bi-image-fill display-3 text-danger mb-3"></i>
+
+                    <h4>Real Images</h4>
+
+                    <p>
+                        View real tourist place images using the Pexels API.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Recommendation Button -->
+
+        <div class="text-center mt-5">
+
+            <a href="/recommend" class="btn btn-success btn-lg px-5">
+
+                <i class="bi bi-search"></i>
+
+                Get AI Recommendation
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

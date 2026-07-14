@@ -1,0 +1,752 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    background:url("../images/background.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+
+}
+
+
+
+/* ===========================
+   LOGIN CARD
+=========================== */
+
+.login-card{
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    margin-bottom:15px;
+
+}
+
+
+/* ===========================
+   TITLE
+=========================== */
+
+.login-card h2{
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+
+.login-card p{
+
+    color:white;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ===========================
+   INPUT
+=========================== */
+
+.input-group-text{
+
+    background:#0A6EBD;
+
+    color:white;
+
+    border:none;
+
+}
+
+
+.form-control{
+
+    border:none;
+
+    padding:12px;
+
+}
+
+
+.form-control:focus{
+
+    box-shadow:none;
+
+}
+
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn-primary{
+
+    background:#0A6EBD;
+
+    border:none;
+
+    padding:12px;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+
+.btn-primary:hover{
+
+    background:#0056b3;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.login-card{
+
+padding:30px;
+
+}
+
+.logo{
+
+width:75px;
+
+height:75px;
+
+}
+
+}
+/* ===========================
+   NAVBAR
+=========================== */
+
+.custom-navbar{
+
+    background:#0A6EBD;
+
+}
+
+.nav-logo{
+
+    width:45px;
+
+    margin-right:10px;
+
+}
+
+.navbar-brand{
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    font-size:18px;
+
+    margin-left:20px;
+
+}
+
+.nav-link:hover{
+
+    color:#FFD54F !important;
+
+}
+/* ===============================
+   DASHBOARD NAVBAR
+================================ */
+
+.custom-navbar{
+    background:#0A6EBD;
+    padding:12px 0;
+}
+
+.nav-logo{
+    width:45px;
+    height:45px;
+    margin-right:10px;
+}
+
+.navbar-brand{
+    color:white !important;
+    font-size:24px;
+    font-weight:700;
+}
+
+.nav-link{
+    color:white !important;
+    font-size:17px;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#FFD54F !important;
+}
+/* ===================================
+        DASHBOARD
+=================================== */
+
+.dashboard-section{
+
+    padding:40px 0;
+
+}
+
+
+.welcome-card{
+
+    background:rgba(255,255,255,.90);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+
+.welcome-card h2{
+
+    color:#0A6EBD;
+
+    font-size:38px;
+
+    font-weight:700;
+
+}
+
+
+.welcome-card p{
+
+    margin:20px 0;
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+/* ===============================
+   STATISTICS
+================================ */
+
+.stats-section{
+
+    padding:40px 0 70px;
+
+}
+
+.stats-card{
+
+    background:rgba(255,255,255,.92);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.stats-icon{
+
+    font-size:50px;
+
+    color:#0A6EBD;
+
+}
+
+.stats-card h2{
+
+    margin-top:15px;
+
+    color:#0A6EBD;
+
+    font-weight:700;
+
+}
+
+.stats-card p{
+
+    font-size:18px;
+
+    color:#555;
+
+}
+/* ===============================
+   QUICK ACTIONS
+================================ */
+
+.quick-section{
+
+    padding:20px 0 60px;
+
+}
+
+.section-title{
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-weight:700;
+
+}
+
+.action-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    padding:35px;
+
+    transition:.4s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.action-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.action-card i{
+
+    font-size:55px;
+
+    color:#0A6EBD;
+
+}
+
+.action-card h4{
+
+    margin-top:20px;
+
+}
+
+.action-card p{
+
+    color:#666;
+
+}
+
+/* ===========================
+RECOMMENDATION & RESULT PAGE
+=========================== */
+
+.recommend-page{
+    background:url("../images/background.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    min-height:100vh;
+}
+
+.overlay{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+
+    /* Important */
+    align-items:flex-start;
+
+    padding:60px 20px;
+
+    background:rgba(0,0,0,.45);
+}
+
+.recommend-box{
+
+    max-width:650px;
+    width:100%;
+
+    background:rgba(255,255,255,0.95);
+
+    backdrop-filter:blur(15px);
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+    transition:0.4s;
+
+}
+
+.recommend-box h2{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#0A6EBD;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.recommend-box button{
+
+    height:60px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+
+.recommend-box button:hover{
+
+    transform:translateY(-3px);
+
+}
+.form-label{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+.form-select{
+
+    height:55px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+}
+
+.form-select:focus{
+
+    border:2px solid #0A6EBD;
+
+    box-shadow:none;
+
+}
+/* ==================================
+   RESPONSIVE DESIGN
+================================== */
+
+@media (max-width:768px){
+
+    .welcome-card{
+        padding:25px;
+    }
+
+    .welcome-card h2{
+        font-size:28px;
+    }
+
+    .welcome-card p{
+        font-size:16px;
+    }
+
+    .stats-card{
+        margin-bottom:20px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    .card img{
+        height:180px !important;
+    }
+
+    .recommend-box{
+        width:100%;
+        padding:25px;
+    }
+
+    .navbar-brand{
+        font-size:20px;
+    }
+
+    .nav-logo{
+        width:38px;
+        height:38px;
+    }
+
+}
+/* ===========================
+   RESULT PAGE IMAGE
+=========================== */
+
+.result-image{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+@media (max-width:768px){
+
+    .result-image{
+
+        height:220px;
+
+    }
+
+}
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    background:#0A6EBD;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+.footer p{
+
+    margin:0;
+
+    font-size:16px;
+
+}
+
+.footer a{
+
+    color:#FFD54F;
+
+    text-decoration:none;
+
+}
+
+.footer a:hover{
+
+    text-decoration:underline;
+
+}
+/* ===========================
+   LOADING SCREEN
+=========================== */
+
+#loadingScreen{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(255,255,255,0.95);
+
+    z-index:9999;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.loading-box{
+
+    text-align:center;
+
+}
+
+.loading-box h3{
+
+    color:#0A6EBD;
+
+    font-weight:700;
+
+    margin-top:20px;
+
+}
+
+.loading-box p{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+#recommendBtn{
+
+    width:100%;
+
+    height:60px;
+
+    background:#0A6EBD;
+
+    border:none;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    border-radius:12px;
+
+    transition:0.3s;
+
+}
+
+#recommendBtn:hover{
+
+    background:#085a9d;
+
+    transform:translateY(-2px);
+
+}
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+.recommend-box,
+.welcome-card,
+.stats-card,
+.card{
+
+    animation:fadeInUp 0.8s ease;
+
+}
+
+@keyframes fadeInUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
